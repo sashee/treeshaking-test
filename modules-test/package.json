@@ -1,0 +1,19 @@
+{
+  "name": "treeshaking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack",
+		"test-webpack-exports": "npm run build && cat bundle.js | grep -o 'A_VAL_ES6\\|B_VAL_ES6\\|A_VAL_COMMONJS\\|B_VAL_COMMONJS'"
+  },
+	"devDependencies": {
+		"webpack": "2.2.0",
+		"babel-core": "6.16.0",
+		"babel-loader": "6.2.7",
+		"babel-preset-es2015": "6.22.0"
+	},
+  "author": "",
+  "license": "ISC"
+}
